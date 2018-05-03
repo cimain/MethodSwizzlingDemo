@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIControl+Limit.h"
 
 @interface ViewController ()
 
@@ -22,8 +23,25 @@
     [array objectAtIndex:3];
     //本来要奔溃的
     [array objectAtIndex:4];
+    
+    
+    [self setupSubViews];
 }
 
+-(void)setupSubViews{
+    
+    UIButton *btn = [UIButton new];
+    btn =[[UIButton alloc]initWithFrame:CGRectMake(100,100,100,40)];
+    [btn setTitle:@"btnTest"forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor]forState:UIControlStateNormal];
+    btn.acceptEventInterval = 3;
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnAction)forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)btnAction{
+    NSLog(@"btnAction is executed");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

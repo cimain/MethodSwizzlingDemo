@@ -17,6 +17,7 @@
 		F77C5BDE209AF4A1005DE5D9 /* MethodSwizzlingDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F77C5BDD209AF4A1005DE5D9 /* MethodSwizzlingDemoUITests.m */; };
 		F77C5BEF209AF4E2005DE5D9 /* UIViewController+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F77C5BEE209AF4E2005DE5D9 /* UIViewController+Log.m */; };
 		F77C5BF2209AF568005DE5D9 /* NSArray+CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F77C5BF1209AF568005DE5D9 /* NSArray+CrashHandle.m */; };
+		F7A72F6B209B4C950040DA65 /* UIControl+Limit.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A72F6A209B4C950040DA65 /* UIControl+Limit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		F77C5BEE209AF4E2005DE5D9 /* UIViewController+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Log.m"; sourceTree = "<group>"; };
 		F77C5BF0209AF568005DE5D9 /* NSArray+CrashHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashHandle.h"; sourceTree = "<group>"; };
 		F77C5BF1209AF568005DE5D9 /* NSArray+CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashHandle.m"; sourceTree = "<group>"; };
+		F7A72F69209B4C950040DA65 /* UIControl+Limit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Limit.h"; sourceTree = "<group>"; };
+		F7A72F6A209B4C950040DA65 /* UIControl+Limit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Limit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		F77C5BB8209AF4A1005DE5D9 /* MethodSwizzlingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F7A72F68209B4C1B0040DA65 /* UIControlHandle */,
 				F77C5BEC209AF4B6005DE5D9 /* VCLogHandle */,
 				F77C5BEB209AF4A8005DE5D9 /* NSArrayCrashHandle */,
 				F77C5BB9209AF4A1005DE5D9 /* AppDelegate.h */,
@@ -156,6 +160,15 @@
 				F77C5BEE209AF4E2005DE5D9 /* UIViewController+Log.m */,
 			);
 			path = VCLogHandle;
+			sourceTree = "<group>";
+		};
+		F7A72F68209B4C1B0040DA65 /* UIControlHandle */ = {
+			isa = PBXGroup;
+			children = (
+				F7A72F69209B4C950040DA65 /* UIControl+Limit.h */,
+				F7A72F6A209B4C950040DA65 /* UIControl+Limit.m */,
+			);
+			path = UIControlHandle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +307,7 @@
 				F77C5BBE209AF4A1005DE5D9 /* ViewController.m in Sources */,
 				F77C5BC9209AF4A1005DE5D9 /* main.m in Sources */,
 				F77C5BBB209AF4A1005DE5D9 /* AppDelegate.m in Sources */,
+				F7A72F6B209B4C950040DA65 /* UIControl+Limit.m in Sources */,
 				F77C5BEF209AF4E2005DE5D9 /* UIViewController+Log.m in Sources */,
 				F77C5BF2209AF568005DE5D9 /* NSArray+CrashHandle.m in Sources */,
 			);
